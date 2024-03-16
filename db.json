@@ -1,0 +1,64 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "name": "Ronda",
+        "category": "Bed",
+        "rating": "4.9",
+        "price": "5.017",
+        "imgSrc": "/images/KPP.jpg"
+      },
+      {
+        "id": "2",
+        "name": "Ronda",
+        "category": "Bed",
+        "rating": "4.9",
+        "price": "5.017",
+        "imgSrc": "/images/KPP.jpg"
+      },
+      {
+        "id": "3",
+        "name": "Ronda",
+        "category": "Bed",
+        "rating": "4.9",
+        "price": "5.017",
+        "imgSrc": "/images/KPP.jpg"
+      },
+      {
+        "id": "4",
+        "name": "Ronda",
+        "category": "Bed",
+        "rating": "4.9",
+        "price": "5.017",
+        "imgSrc": "/images/KPP.jpg"
+      },
+      {
+        "id": "5",
+        "name": "Bench2",
+        "category": "Bench",
+        "rating": "3.2",
+        "price": "12",
+        "imgSrc": "https://brushbrown.ru/mdata/topimg/size3/577.jpg"
+      },
+      {
+        "id": "6",
+        "name": "Bed2",
+        "category": "Bed",
+        "rating": "1.0",
+        "price": "105.80",
+        "imgSrc": "https://www.centrufficio.ru/assets/images/products/5118/file-l-(3).jpg"
+      },
+      {
+        "id": "1709283821483",
+        "name": "Новый стул уникальный",
+        "category": "Chair",
+        "price": "999999"
+      },
+      {
+        "id": "1709816387203",
+        "name": "bed",
+        "category": "Bed",
+        "price": "13"
+      }
+    ]
+  }

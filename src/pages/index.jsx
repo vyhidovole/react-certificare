@@ -77,12 +77,15 @@ const Home = () => (
       </div>
       <h2 className="font-bold mb-6">НАШИ РАБОТЫ</h2>
 
-      <div className="inline-grid grid-cols-3 gap-4 w-full h-1/4 ">
-        <div><Image src={"/images/glecher.png"} alt="img" width={468} height={374} priority={true} /></div>
-        <div><Image src={"/images/denever.png"} alt="img" width={468} height={374} priority={true} /></div>
-        <div><Image src={"/images/london.png"} alt="img" width={488} height={833} priority={true} /></div>
+      <div className="mt-28 mb-3 w-auto h-auto bg-slate-300">
+        <div className="inline-block ml-10 "><Image className="rounded-md" src={"/images/glecher.png"} alt="img" width={440}  height={374} priority={true} /></div>
+        <div className="inline-block ml-10"><Image className="rounded-md" src={"/images/denever.png"} alt="img" width={440} height={374} priority={true} /></div>
+        <div className="ml-10 mt-10 rounded-sm"><Image className="rounded-md" src={"/images/amely.png"} alt="img" width={925} height={430} priority={true} /></div>
+        <div className="absolute top-96 left-2/3"><Image className="rounded-md" src={"/images/london.png"} alt="img" width={488} height={633} priority={true} />
+        
+        </div>
+
       </div>
-      <div className="justify-self-start"><Image src={"/images/amely.png"} alt="img" width={993} height={430} priority={true} /></div>
 
 
       <Link href="/about"> About us</Link>

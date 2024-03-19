@@ -21,12 +21,12 @@ export const App = ({ children }) => (
   </ThemeProvider>
 )
 
-const Dropdown = () => {
+const Dropdown_6 = () => {
 
      return (
         <Menu>
         <MenuButton as={Button} rightIcon={''}>
-        КУХНИ 
+        ДИВАНЫ 
         </MenuButton>
         <MenuList className="bg-white p-5 font-light rounded-sm">
             <MenuItem>Модульные кухни</MenuItem>
@@ -40,4 +40,4 @@ const Dropdown = () => {
     )
 }
 
-export default Dropdown 
+export default Dropdown_6 

@@ -1,9 +1,14 @@
 import Head from "next/head";
-import React, {useState}from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Dropdown from "../components/dropdown/dropdown";
-import "../components/Dropdown/Dropdown.module.css"
+import Dropdown from "../components/Dropdown/Dropdown";
+import Dropdown_cuboard from "../components/Dropdown/Dropdown_cuboard";
+import Dropdown_living from "../components/Dropdown/Dropdown_living";
+import Dropdown_baby from "../components/Dropdown/Dropdown_baby";
+import Dropdown_bedroom from "../components/Dropdown/Dropdown_bedroom";
+import Dropdown_couch from "../components/Dropdown/Dropdown_couch";
+import Dropdown_lobby from "../components/Dropdown/Dropdown_lobby";
 
 
 
@@ -12,7 +17,7 @@ import "../components/Dropdown/Dropdown.module.css"
 const Home = () => (
 
   <>
-  
+
     <Head>
       <title>My first template</title>
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -37,7 +42,7 @@ const Home = () => (
           </div>
 
         </div>
-        <div className="flex gap-5"><a href=""><div><svg data-slot="icon" fill="none" strokeWidth="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 " aria-hidden="true">
+        <div className="flex gap-5"><a href="/Components"><div><svg data-slot="icon" fill="none" strokeWidth="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 " aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"></path>
         </svg>
           <p className="hover:underline">Войти</p>
@@ -60,18 +65,18 @@ const Home = () => (
       </div>
       <div className=" flex justify-around w-full h-14 bg-teal-500 py-4 my-2 font-bold relative mb-6">
         <div className=" flex justify-around w-3/4">
-          <button className="menu-button" ><h3>КУХНИ</h3></button>
-          <button className="menu-button"><h3>ГОСТИННЫЕ</h3></button>
-          <button className="menu-button"><h3>СПАЛЬНИ</h3></button>
-          <button className="menu-button"><h3>ПРИХОЖИЕ</h3></button>
-          <button className="menu-button"><h3>ШКАФЫ-КУПЕ</h3></button>
-          <button className="menu-button"><h3>ДЕТСКИЕ</h3></button>
-          <button className="menu-button"><h3>ДИВАНЫ</h3></button>
+          <Dropdown></Dropdown>
+          <Dropdown_living></Dropdown_living>
+          <Dropdown_baby></Dropdown_baby>
+          <Dropdown_bedroom></Dropdown_bedroom>
+          <Dropdown_couch></Dropdown_couch>
+          <Dropdown_lobby></Dropdown_lobby>
+          <Dropdown_cuboard></Dropdown_cuboard>
         </div>
         <a className="text-white bg-slate-500 w-48 h-14 p-2 pt-4 absolute right-2 top-0" href="/catalog">ГДЕ ПОСМОТРЕТЬ</a>
       </div>
       <h2 className="font-bold mb-6">НАШИ РАБОТЫ</h2>
-      <Dropdown></Dropdown>
+
       <div className="inline-grid grid-cols-3 gap-4 w-full h-1/4 ">
         <div><Image src={"/images/glecher.png"} alt="img" width={468} height={374} priority={true} /></div>
         <div><Image src={"/images/denever.png"} alt="img" width={468} height={374} priority={true} /></div>

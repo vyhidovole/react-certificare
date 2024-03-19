@@ -7,18 +7,16 @@ const Components = () => {
         <>
             <section className="components">
                 <div className="container">
-                    <h3>This is components page</h3>
+                    {/* <h3>This is components page</h3> */}
 
-                    <button onClick={() => setShowModal(true)}> Show modal </button>
+                    <button className="bg-lime-500 rounded-full py-2 px-7" onClick={() => setShowModal(true)}>Login</button>
                 </div>
             </section>
             <Modal
-            titleModal="New Modal Title"
+            
              isOpen ={showModal}
               onClose = {() => setShowModal(false)}>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-            </p>
+           
             </Modal>
            
         </>

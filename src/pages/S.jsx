@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Footer from "../components/Footer/Footer"
 
 
 const Stock = () => {
@@ -67,7 +68,7 @@ const Stock = () => {
 
 
       </div>
-
+      <Footer></Footer>
     </>
 
 

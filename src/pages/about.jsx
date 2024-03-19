@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Footer from "../components/Footer/Footer"
 
 const About = () => {
   return (
@@ -10,6 +11,7 @@ const About = () => {
  <Image src={"/images/blue-master-bedroom.png"} alt="img" width={713} height={480} priority={true} />
  <h3>МЫ В INSTAGRAM</h3>
  <Image src={"/images/image_inst.png"} alt="imgо" width={1173} height={769} priority={true} />
+ <Footer></Footer>
  </>
   
     

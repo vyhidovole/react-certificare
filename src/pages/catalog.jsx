@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Footer from "../components/Footer/Footer"
 
 const Catalog = () => {
     return (
@@ -40,6 +41,7 @@ const Catalog = () => {
                     <button className="text-white bg-sky-800 absolute bottom-0 left-0  px-6 py-1 rounded-sm">ШКАФЫ-КУПЕ</button>
                 </div>
             </div>
+            <Footer></Footer>
 
 
         </>

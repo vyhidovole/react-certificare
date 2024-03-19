@@ -9,6 +9,7 @@ import Dropdown_baby from "../components/Dropdown/Dropdown_baby";
 import Dropdown_bedroom from "../components/Dropdown/Dropdown_bedroom";
 import Dropdown_couch from "../components/Dropdown/Dropdown_couch";
 import Dropdown_lobby from "../components/Dropdown/Dropdown_lobby";
+import Footer from "../components/Footer/Footer"
 
 
 
@@ -90,6 +91,7 @@ const Home = () => (
 
       <Link href="/about"> About us</Link>
     </main>
+<Footer></Footer>
   </>
 );
 

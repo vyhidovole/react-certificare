@@ -1,15 +1,16 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import styles from "./Navigation.module.css";
-
+import {ButtonAdress} from "../components/Button/ButtonAdress"
 
 /* пункты меню в шапке */
 const navItems = [
-  { name: "Акции", path: "/S"},
+  
+  { name: "Акции", path: "/S" },
   { name: "Наши работы", path: "/" },
-  { name: "Контакты", path: "/contact"},
-  
-  
+  { name: "Контакты", path: "/contact" },
+
+
 ];
 
 const Navigation = () => {
@@ -31,24 +32,24 @@ const Navigation = () => {
       <div className="container">
         <div className="flex justify-between items-center">
           <div className="container inline-flex items-center gap-5">
-         
-            <a href="#" >
-            Сборка
-            </a>
-            <a href="#" >
-            Оплата
-            </a>
-            <a href="#" >
-           Доставка
-            </a>
-            </div>
+
+           <a href="/App">Сборка</a>
+            <button >
+              Оплата
+            </button>
+            <ButtonAdress/>
+            
+            <button >
+              Доставка
+            </button>
+          </div>
+          
           <nav className="inline-flex items-center gap-5">
             {navItems.map((item) => (
               <a
                 onClick={() => onClickHandler(item.path)}
-                className={`cursor-pointer  ${
-                  item.path === router.pathname ? "text-sky-500" : ""
-                }`}
+                className={`cursor-pointer  ${item.path === router.pathname ? "text-sky-500" : ""
+                  }`}
                 key={item.path}
               >
                 {item.name}

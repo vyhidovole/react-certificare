@@ -1,7 +1,7 @@
 
 import React from "react"
 
-export const Modadress = ({ active, setActive }) => {
+export const ModAdress = ({ active, setActive }) => {
   return (
 
     <div className={active ? "modadress active scale-100": "modadress scale-0 " } onClick={() => setActive(false)}>

@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import styles from "./Navigation.module.css";
-import {ButtonAdress} from "../components/Button/ButtonAdress"
+import { ButtonAdress } from "../Button/ButtonAdress";
+import { ButtonAdressPayment } from "../Button/ButtonAdressPayment";
+import { ButtonAdressAssembly } from "../Button/ButtonAdressAssembly";
+import Link from "next/link";
 
 /* пункты меню в шапке */
 const navItems = [
-  
   { name: "Акции", path: "/S" },
   { name: "Наши работы", path: "/" },
   { name: "Контакты", path: "/contact" },
-
-
 ];
 
 const Navigation = () => {
@@ -32,18 +32,12 @@ const Navigation = () => {
       <div className="container">
         <div className="flex justify-between items-center">
           <div className="container inline-flex items-center gap-5">
+            <ButtonAdress />
+            <ButtonAdressAssembly />
+            <ButtonAdressPayment />
 
-           <a href="/App">Сборка</a>
-            <button >
-              Оплата
-            </button>
-            <ButtonAdress/>
-            
-            <button >
-              Доставка
-            </button>
           </div>
-          
+
           <nav className="inline-flex items-center gap-5">
             {navItems.map((item) => (
               <a

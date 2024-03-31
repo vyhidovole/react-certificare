@@ -2,11 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  color: rgb(var(--foreground-rgb));
-}
-
-.container {
-  width: 1230px;
-  margin: 0 auto;
-}

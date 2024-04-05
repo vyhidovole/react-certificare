@@ -59,7 +59,7 @@ const Home = () => (
             <Link href="https://vostok-spb.ru/obratnyj_zvonok/"> <button className="border-red-500 border-2 text-red-500 rounded pl-2 pr-2 hover:">
               Заказать звонок
             </button></Link>
-           
+
           </div>
         </div>
         <div className="flex gap-5">
@@ -149,7 +149,8 @@ const Home = () => (
       <h2 className="font-bold mb-6">НАШИ РАБОТЫ</h2>
 
       <div className="relative mt-0 mb-3 w-auto h-auto bg-slate-300 -z-10">
-        <div className="flex justify-around"><div className="">
+        <div 
+        className="flex justify-around"><div className="">
           <Image
             className="rounded-md"
             src={"/images/glecher.png"}
@@ -158,39 +159,43 @@ const Home = () => (
             height={374}
             priority={true}
           />
-          <button className="text-white bg-sky-800 absolute  px-6 py-1 rounded-sm top-72 left-5 ">
-                        КУХНЯ-ГЛЕЧЕР
-                    </button>
+          <button 
+          className="text-white bg-sky-800 absolute  px-6 py-1 rounded-sm top-72 left-5 ">
+            КУХНЯ-ГЛЕЧЕР
+          </button>
         </div>
-        <div className="">
-          <Image
-            className="rounded-md"
-            src={"/images/denever.png"}
-            alt="img"
-            width={440}
-            height={374}
-            priority={true}
-          />
-           <button className="text-white bg-sky-800 absolute  px-6 py-1 rounded-sm top-72 left-110 ">
-                        ГОСТИННАЯ-ДЕНВЕР
-                    </button>
+          <div
+           className="">
+            <Image
+              className="rounded-md"
+              src={"/images/denever.png"}
+              alt="img"
+              width={440}
+              height={374}
+              priority={true}
+            />
+            <button className="text-white bg-sky-800 absolute  px-6 py-1 rounded-sm top-72 left-110 ">
+              ГОСТИННАЯ-ДЕНВЕР
+            </button>
+          </div>
+          <div className="">
+            <Image
+              className="rounded-md"
+              src={"/images/london.png"}
+              alt="img"
+              width={488}
+              height={633}
+              priority={true}
+            />
+            <button
+              className="text-white bg-sky-800 absolute  px-6 py-1 rounded-sm bottom-6 left-110 ">
+              КУХНЯ-ЛОНДОН
+            </button>
+          </div>
         </div>
-        <div className="">
-          <Image
-            className="rounded-md"
-            src={"/images/london.png"}
-            alt="img"
-            width={488}
-            height={633}
-            priority={true}
-          />
-          <button className="text-white bg-sky-800 absolute  px-6 py-1 rounded-sm bottom-6 left-110 ">
-                        КУХНЯ-ЛОНДОН
-                    </button>
-        </div>
-        </div>
-        
-        <div className="absolute top-96 left-5 rounded-sm">
+
+        <div 
+        className="absolute top-96 left-5 rounded-sm">
           <Image
             className="rounded-md"
             src={"/images/amely.png"}
@@ -199,11 +204,12 @@ const Home = () => (
             height={430}
             priority={true}
           />
-           <button className="text-white bg-sky-800 absolute  px-6 py-1 rounded-sm bottom-5 left-0 ">
-                        КУХНЯ-АМЕЛИ
-                    </button>
+          <button 
+          className="text-white bg-sky-800 absolute  px-6 py-1 rounded-sm bottom-5 left-0 ">
+            КУХНЯ-АМЕЛИ
+          </button>
         </div>
-        
+
       </div>
 
       <Link className="font-bold" href="/about"> О НАС</Link>

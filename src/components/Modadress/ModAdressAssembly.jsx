@@ -10,16 +10,20 @@ export const ModAdressAssembly = ({ active, setActive }) => {
         className="modal_content ModAdressAssembly w-32 h-15 bg-slate-300 p-4 rounded-md "
        /*что бы окно не закрывалость при нажатии на контентную часть */
        onClick={e => e.stopPropagation()}>
-        <form   action="" method="post">
-          <label className="" for="POST-name">
+        <form   
+        action="" method="post">
+          <label
+           className="" for="POST-name">
             
           </label>
-          <input className=" text-center w-full"
+          <input
+           className=" text-center w-full"
             id="POST-name"
             type="text"
             placeholder="Да/Нет"
             name="name" />
-           <input className="pl-1 pt-1" type="submit" value="Отправить" />
+           <input
+            className="pl-1 pt-1" type="submit" value="Отправить" />
         </form>
       </div>
     </div>
